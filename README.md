@@ -52,7 +52,7 @@ El repositorio incluye la resolución del ejercicio obligatorio que simula el co
 * **Costo base:** $520.000 | **Días:** 12 | **Destino:** Internacional | **Alojamiento:** 5 estrellas
 * **Servicios:** Seguro de viaje ($4.000/día), Traslados ($30.000 base) y Excursiones ($15.000 base).
 
-### Resultados validados mediante Pruebas Unitarias:
+### Resultados validados mediante Pruebas Unitarias
 
 ---
 
