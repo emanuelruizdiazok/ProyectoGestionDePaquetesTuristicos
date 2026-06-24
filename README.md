@@ -4,8 +4,6 @@ Este proyecto consiste en el desarrollo de un sistema orientado a objetos en **J
 diseñado para calcular el costo final de paquetes turísticos personalizados.
 La solución ha sido construida bajo el enfoque de **Desarrollo Guiado por Pruebas (TDD)** utilizando **JUnit 4**, garantizando un diseño extensible, simple y robusto que cumple con las buenas prácticas de la programación orientada a objetos.
 
-El sistema fue desarrollado para el examen recuperatorio de la materia **Programación Básica II (PB2)**.
-
 ---
 
 ## 📌 Contexto del Problema
@@ -46,8 +44,6 @@ El sistema implementa tres tipos de liquidaciones:
 * `CostoFinalConDescuentoPorcentaje`: Aplica un descuento porcentual sobre el total acumulado.
 * `CostoFinalConDescuentoFijo`: Resta un monto fijo en pesos al total acumulado.
 
-> ⚠️ **Restricción de Negocio:** El costo final calculado por cualquiera de las estrategias **no puede superar los $900.000**. En caso de excederse, el sistema interrumpe el flujo y lanza una excepción de negocio controlada.
-
 ---
 
 ## 📊 Caso de Simulación Obligatorio
@@ -58,12 +54,6 @@ El repositorio incluye la resolución del ejercicio obligatorio que simula el co
 
 ### Resultados validados mediante Pruebas Unitarias:
 
-| Estrategia Aplicada | Servicios Incluidos | Resultado Esperado | Estado de la Prueba |
-| :--- | :--- | :--- | :--- |
-| `CostoFinal` | Seguro, Traslados, Excursiones | **$748.000** | ✅ Passed |
-| `CostoFinalConDescuentoPorcentaje` (15%) | Seguro, Traslados, Excursiones | **$635.800** | ✅ Passed |
-| `CostoFinalConDescuentoFijo` ($70.000) | Seguro, Traslados, Excursiones | **$804.000** | ✅ Passed |
-
 ---
 
 ## 🧪 Pruebas Significativas Realizadas (TDD)
@@ -73,7 +63,5 @@ El archivo de pruebas unitarias (`PaqueteTuristicoTest.java`) cubre los requisit
 2. **Cálculo de Servicios Individuales:** Comprobación del correcto comportamiento y penalizaciones del Seguro, Traslados y Excursiones según el contexto del paquete.
 3. **Cálculo Final Integrado:** Validación de la sumatoria total del paquete sin descuentos.
 4. **Validación de Estrategias con Descuento:** Ejecución exacta de los escenarios matemáticos con descuentos fijos y porcentuales de la simulación.
-5. **Lanzamiento de Excepciones:** Prueba de estrés donde se fuerza al paquete a superar los $900.000 de presupuesto para constatar que la excepción de negocio se arroje correctamente.
-
 ---
 Desarrollado por [Emanuel Ruiz Díaz](https://github.com/emanuelruizdiazok).
